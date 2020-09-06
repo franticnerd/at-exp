@@ -86,9 +86,9 @@ document.addEventListener('MSFullscreenChange', exitHandler);
 function exitHandler() {
     if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
 
-        alert("You agreed to stay in the full screen mode during this trial. Exiting the full screen mode may result in termination of your participation.\n\n Click OK to go back to full screen. Or you can close the window if you indeed want to quit this trial.");
+        // alert("You agreed to stay in the full screen mode during this trial. Exiting the full screen mode may result in termination of your participation.\n\n Click OK to go back to full screen. Or you can close the window if you indeed want to quit this trial.");
 
-        var html='<button onclick="initFullscreen()">click to enter fullscreen and start the trial</button>';
+        var html='<button onclick="initFullscreen()">click to enter fullscreen and resume the trial</button>';
         $('#fs-control').html(html);
 
 
