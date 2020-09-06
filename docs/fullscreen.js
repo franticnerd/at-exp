@@ -1,17 +1,11 @@
 $(document).ready(function() {
-    openFullscreen();
 });
 
 
-// function initFullscreen() {
-//     var result = confirm("You agreed to stay in the full screen mode during this trial. \n\n Exiting the full screen mode may result in termination of your participation.\n\n Click OK to enter full screen. Or you can close the window if you indeed want to quit this trial." );
-//     if ( result ) {
-//         // the user clicked ok
-//         openFullscreen();
-//     } else {
-//         setTimeout(openFullscreen, 1000);
-//     }
-// }
+function initFullscreen() {
+    openFullscreen();
+    document.getElementById('fs-control').style.visibility = 'hidden';
+}
 
 /* View in fullscreen */
 function openFullscreen() {
@@ -89,20 +83,20 @@ document.addEventListener('MSFullscreenChange', exitHandler);
 function exitHandler() {
     if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
 
-        // ///fire your event
-        // alert("You agreed to stay in the full screen mode during this trial. Exiting the full screen mode may result in termination of your participation.\n\n Click OK to go back to full screen. Or you can close the window if you indeed want to quit this trial.");
-        // openFullscreen();
+        alert("You agreed to stay in the full screen mode during this trial. Exiting the full screen mode may result in termination of your participation.\n\n Click OK to go back to full screen. Or you can close the window if you indeed want to quit this trial.");
+        document.getElementById('fs-control').style.visibility = 'visible';
 
-        // if the ok button is clicked, result will be true (boolean)
-        var result = confirm( "You agreed to stay in the full screen mode during this trial. \n\n Exiting the full screen mode may result in termination of your participation.\n\n Click OK to go back to full screen. Or you can close the window if you indeed want to quit this trial." );
 
-        if ( result ) {
-            // the user clicked ok
-            openFullscreen();
-        } else {
-            // window.close();
-        }
+        // // if the ok button is clicked, result will be true (boolean)
+        // var result = confirm( "You agreed to stay in the full screen mode during this trial. \n\n Exiting the full screen mode may result in termination of your participation.\n\n Click OK to go back to full screen. Or you can close the window if you indeed want to quit this trial." );
+        // if ( result ) {
+        //     // the user clicked ok
+        //     openFullscreen();
+        // } else {
+        //     // window.close();
+        // }
+        // setTimeout(openFullscreen, 1000);
 
-        setTimeout(openFullscreen, 1000);
+
     }
 }

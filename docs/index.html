@@ -21,6 +21,24 @@
         <script src="video.js"></script>
         <script src="http://www.youtube.com/player_api"></script>
         <style> #player {pointer-events: none; height:100%; width:100%;} </style>
+        <style>
+         button {
+             background-color: #4CAF50; /* Green */
+             width: 100%;
+             height: 100%;
+             border: none;
+             color: white;
+             /* padding: 25px 35px; */
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 64px;
+             margin: 0;
+             position: absolute;
+             top: 0%;
+             left: 0%;
+         }
+        </style>
     </head>
     <body>
         <div id="menu" style="height:100vh;width:60%;float:left;">
@@ -47,5 +65,10 @@
             </div>
 
         </div>
+
+        <div id="fs-control">
+            <button onclick="initFullscreen()">click to enter fullscreen and start the trial</button>
+        </div>
+
     </body>
 </html>
