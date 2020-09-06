@@ -4,8 +4,11 @@ $(document).ready(function() {
 
 function initFullscreen() {
     openFullscreen();
-    document.getElementById('fs-control').style.visibility = 'hidden';
+    var html='';
+    $('#fs-control').html(html);
 }
+
+
 
 /* View in fullscreen */
 function openFullscreen() {
@@ -84,7 +87,9 @@ function exitHandler() {
     if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
 
         alert("You agreed to stay in the full screen mode during this trial. Exiting the full screen mode may result in termination of your participation.\n\n Click OK to go back to full screen. Or you can close the window if you indeed want to quit this trial.");
-        document.getElementById('fs-control').style.visibility = 'visible';
+
+        var html='<button onclick="initFullscreen()">click to enter fullscreen and start the trial</button>';
+        $('#fs-control').html(html);
 
 
         // // if the ok button is clicked, result will be true (boolean)
