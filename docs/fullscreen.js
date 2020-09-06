@@ -8,9 +8,8 @@ function initFullscreen() {
     if ( result ) {
         // the user clicked ok
         openFullscreen();
-        // setTimeout(openFullscreen, 1000);
     } else {
-        // window.close();
+        setTimeout(openFullscreen, 1000);
     }
 }
 
