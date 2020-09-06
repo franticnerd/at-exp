@@ -1,17 +1,17 @@
 $(document).ready(function() {
-    setTimeout(initFullscreen, 2000);
+    openFullscreen();
 });
 
 
-function initFullscreen() {
-    var result = confirm( "You agreed to stay in the full screen mode during this trial. \n\n Exiting the full screen mode may result in termination of your participation.\n\n Click OK to enter full screen. Or you can close the window if you indeed want to quit this trial." );
-    if ( result ) {
-        // the user clicked ok
-        openFullscreen();
-    } else {
-        setTimeout(openFullscreen, 1000);
-    }
-}
+// function initFullscreen() {
+//     var result = confirm("You agreed to stay in the full screen mode during this trial. \n\n Exiting the full screen mode may result in termination of your participation.\n\n Click OK to enter full screen. Or you can close the window if you indeed want to quit this trial." );
+//     if ( result ) {
+//         // the user clicked ok
+//         openFullscreen();
+//     } else {
+//         setTimeout(openFullscreen, 1000);
+//     }
+// }
 
 /* View in fullscreen */
 function openFullscreen() {
