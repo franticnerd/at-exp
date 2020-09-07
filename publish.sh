@@ -2,6 +2,8 @@
 
 cp *.html ./docs
 cp *.js ./docs
+rm -rf ./docs/public
+cp -r public ./docs
 
 git add docs
 git add *.html
