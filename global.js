@@ -18,4 +18,4 @@ var imageClicked = 0;
 // timestamp when the current image has appeared
 var imageShowTime = 0;
 // total number of images (the name needs refactoring...)
-var num_image = 4;
+var num_image = 39;
