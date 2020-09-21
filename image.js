@@ -7,7 +7,7 @@ $(document).ready(function() {
 // get a random time interval for popping next image
 function getRandomTime() {
     // pop image in 5s - 45s
-    var t = Math.floor(Math.random() * 15000) + 25000;
+    var t = Math.floor(Math.random() * 15000) + 45000;
     // var t = Math.floor(Math.random() * 1000) + 3000;
     return t;
 }
