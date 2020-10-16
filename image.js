@@ -27,8 +27,8 @@ function pop_image () {
     // var top_pos=Math.floor(Math.random() * 80);
 
     // choose a fixed position
-    var left_pos=65;
-    var top_pos=75;
+    var left_pos=75;
+    var top_pos=65;
 
     showImage(index, left_pos, top_pos);
 
