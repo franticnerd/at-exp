@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google Analytics -->
+        <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-169304287-2', 'auto');
+         ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+
+        <title>Experiments</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="global.js"></script>
+        <script src="image.js"></script>
+        <script src="fullscreen.js"></script>
+        <script src="video-start.js"></script>
+        <script src="http://www.youtube.com/player_api"></script>
+        <style> #player {pointer-events: none; height:100%; width:100%;} </style>
+        <style>
+         button {
+             /* background-color: #4CAF50; /* Green */ */
+             background-color: #D3D3D3;
+             width: 100%;
+             height: 100%;
+             border: none;
+             /* color: white; */
+             /* padding: 25px 35px; */
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 64px;
+             margin: 0;
+             position: absolute;
+             top: 0%;
+             left: 0%;
+         }
+        </style>
+    </head>
+    <body>
+        <div id="menu" style="height:100vh;width:60%;float:left;">
+
+            <!-- <div style="position:relative;"><img src="1.jpg" alt="image" width="120px" height="120px"/></div>' -->
+
+            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSmXQd0BlHw2Kye0ZTPvZ7LZnaGwVecxwwkei4x-zEMzgNQ/viewform?embedded=true" width=100% height=100% frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+
+            <!-- <iframe src="https://mediaillinois.co1.qualtrics.com/jfe/form/SV_bjfEKe3A3HWju8B" width=100% height=100% frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+
+            <iframe src="https://mediaillinois.co1.qualtrics.com/jfe/form/SV_23O18HYTLQa2eyN" width=100% height=100% frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+        </div>
+        <div id="content" style="height:100vh;width:40%;float:left;">
+
+            <div id="video-container" style="height:40%;">
+                <div id="player"></div>
+                <!-- videos playing here -->
+            </div>
+
+
+            <div id="img-container1" style="height:60%;">
+                <!-- <div id="img-container1" style="background-color:#EEEEEE;height:120px;width:120px;">
+                     image
+                     </div> -->
+            </div>
+
+        </div>
+
+        <div id="fs-control">
+            <button onclick="initFullscreen()">click to enter fullscreen and start the trial</button>
+        </div>
+
+    </body>
+</html>
