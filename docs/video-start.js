@@ -32,7 +32,7 @@ function createPlayer() {
 }
 
 function onYouTubePlayerAPIReady() {
-    setTimeout(createPlayer, 300*1000);
+    setTimeout(createPlayer, 720*1000);
 }
 
 //     var html='<iframe class="ytplayer" width=100% height=100% src="http://www.youtube.com/embed/' + videos[index] + '?autoplay=1&controls=0&disablekb=1&mute=1" frameborder="0" allow="autoplay"></iframe>';
